@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <style>
+        .dropdown{
+            position:relative;
+            display:inline-block;
+        }
+        .dropdown-content{
+            position:absolute;
+            display: none;
+            background-color: blue;
+            color: white;
+            padding: 10px 15px;
+            min-width: 160px;
+            border-radius: 10px;
+            z-index:1;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+            background-color: wheat;
+            color: black;
+        }
+        .dropdown-content a{
+            display: block;
+        }
+        .dropdown-content:hover a{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>HOW TO CREATE A DROPDOWN MENU</h1>
+    <p>Here i am making a dropdown menu of links on hovering muose over the text <strong>mouse over me</strong>.</p>
+    <div class="dropdown">
+        <span>Mouse over me.</span>
+        <div class="dropdown-content">
+            <a href="#link1">link 1</a>
+            <a href="#link2">link 2</a>
+            <a href="#link3">link 3</a>
+
+        </div>
+    </div>
+    
+</body>
+</html>

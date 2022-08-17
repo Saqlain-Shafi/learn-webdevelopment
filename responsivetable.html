@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>RESPONSIVE TABLE</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        input[type=text], select, textarea{
+padding: 8px 15px;
+margin-top:6px;
+resize:vertical;
+width:100%;
+display: block;
+border-radius: 5px;
+}
+textarea{
+    height:200px;
+}
+input[type=submit]{
+    background-color: blue;
+    color: white;
+    float:right;
+    padding:10px 15px;
+    display:block;
+}
+input[type=submit]:hover{
+    background-color: green;
+    color:black;
+    font-size: x-large;
+}
+label{
+    padding: 12px 20px;
+    display: inline-block;
+}
+.col-1{
+    float:left;
+  margin-top: 10px;
+    width:25%;
+}
+.col-2{
+    float:right;
+   margin-top:10px;
+    width:75%;
+}
+.container{
+    background-color: #999;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+.row:after{
+    content: "";
+    display:table;
+    clear: both;
+}
+@media screen and (max-width:600px) 
+.col-1, .col-2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;}
+    h1{
+        text-align: center;
+        color: blueviolet;
+        text-transform: uppercase;
+        text-decoration: wavy;
+    }
+    </style>
+</head>
+<body>
+    <h1>RESPONSIVE TABLE</h1>
+    <div class="container">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-1">
+                    <label for="fname">Name</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="fname" name="fname" placeholder="Your Name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="cl">Class</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="cl" name="class" placeholder="Your Class">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="city">City</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" id="city" name="city" placeholder="Your City">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <label for="car">Car At Home</label>
+                    </div>
+                    <div class="col-2">
+                        <select id="car" name="car">
+                            <option value="hyundai">Hyundai</option>
+                            <option value="ford">ford</option>
+                            <option value="suzuki">Suzuki</option>
+                            <option value="none">None</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-1">
+                            <label for="subject">Subject</label>
+                            </div>
+                            <div class="col-2">
+                                <textarea id="subject" name="subject" placeholder="write something here.." style="height: 200px;"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                            <input type="submit" value="submit">
+                        </div>
+        </form>
+    </div>
+    </body>
+</html>

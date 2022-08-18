@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+<style>
+    h1{
+        text-align: center;
+        font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:white;
+    }
+    h2{font-size: large;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color:black;
+
+    }
+    .lineargradient{
+        height:150px;
+        width:100%;
+        background-color: red;
+        background-image:repeating-linear-gradient(to bottom,red ,green ,blue)
+    }
+    #radialgradient{
+        height:250px;
+        width:250px;
+        background-color: red;
+        background-image:repeating-radial-gradient(red ,green 10% ,blue 20%)
+    }
+    #conicgradient{
+        height:250px;
+        width:250px;
+        border-radius:50%;
+        background-color: red;
+        background-image:repeating-conic-gradient(red 0deg 10deg,green 10deg 20deg,blue 20deg 30deg)
+    }
+</style>
+</head>
+<body>
+    <div class="lineargradient">
+        <h1>Example of linear gradient</h1>
+    </div>
+    <div id="radialgradient">
+        <h1>example of radial gradient</h1>
+    </div>
+    <div id="conicgradient">
+    </div>
+    <div>
+        <h2>Example of conic gradient</h2>
+    </div>
+</body>
+</html>

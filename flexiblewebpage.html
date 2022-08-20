@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;}
+            body{
+            margin:0;
+        }
+        .top {text-align: center;
+            background-color: aqua;
+            padding: 2px;}
+        
+        .header{
+            text-align:center;
+        padding:20px;
+    background-color: rgb(42, 44, 165);
+color: azure;
+padding: 5px;}
+            .navbar{
+                display: flex;
+                background-color: #333;
+             }
+                
+            .navbar a{
+                text-align: center;
+                color: white;
+                padding:15px;
+                text-decoration: none;
+              }
+              .navbar a:hover{
+                background-color: blueviolet;
+                color: beige;
+             }
+             .row{ display: flex;
+                flex-wrap: nowrap;
+
+             }
+             .side{
+                background-color: #f1f1f1;
+                padding-left:15px;
+                flex: 30%;
+             }
+             .main{margin-left:0;
+                background-color: white;
+
+            flex: 70%;}
+            .im{
+                width:100%;
+                padding:15px;
+                background-color: white;
+                height:200px;
+            }
+            .im1{
+  background-color:white;
+  width: 100%;
+  padding: 20px;
+height:400px;}
+  .footer{
+    text-align: center;
+    background-color: #666;
+    color: white;
+    padding:20px;
+  }
+  @media screen and (max-width: 700px) {
+  .row, .navbar {   
+    flex-direction: column;
+  }
+}
+        
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h3>Flexible webpage</h3>
+        </div>
+        <div class="header">
+            <h1>My First Webpage</h1>
+            <p style="font-family: monospace;">With a flexible layout</p>
+        </div>
+        
+            <div class="navbar">
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+                <a href="#">INFORMATION</a>
+                <a href="#">GALLERY</a>
+            </div>
+            <div class="row">
+        <div class="side">
+            <h2>About me</h2>
+            <p>Photo of me:</p>
+            <img src="si.jfif" alt="me"  class="im">
+            <p>Here am i , wondering where the coding will take me!</p>
+            <h2>More Text</h2>
+            <p>See some more photographs of me:</p>
+            <img src="si.jfif" alt="me" class="im">
+            <img src="si.jfif" alt="me" class="im">
+</div>
+        <div class="main">
+            <h2>Title Heading</h2>
+            <p>Title description, Aug 20, 2022 </p>
+            <img src="jj.jpg" alt="me" class="im1">
+            <p>In the above picture ,we can feel the emotions</p>
+    <p>Twenty years from now, you will be more disappointed by the things you didn't do than those you did. 
+        So throw off the bowlines...
+        sail away from safe harbor...
+        catch the trade winds in your sails...explore...dream....discover.</p>
+         <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Aug 20, 2022</h5>
+    <img src="hi.jpg" alt="me" class="im1">
+    <p>A poem about this beauty:</p>
+    <pre>Thou still unravish'd bride of quietness,
+        Thou foster-child of silence and slow time,
+ Sylvan historian, who canst thus express
+        A flowery tale more sweetly than our rhyme:
+ What leaf-fring'd legend haunts about thy shape
+        Of deities or mortals, or of both,
+                In Tempe or the dales of Arcady?
+        What men or gods are these? What maidens loth?
+ What mad pursuit? What struggle to escape?
+                What pipes and timbrels? What wild ecstasy?</pre>
+        </div>
+    </div>
+            <div class="footer">
+                <h4>FOOTER</h4>
+                <p>Copyright (C) Microsoft Corporation. All rights reserved.</p>
+            </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            background-color: sandybrown;
+            color: white;
+            text-align: center;
+            padding:3px;
+            
+        }
+        .row{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .column{
+            flex: 25%;
+            max-width: 25%;
+        }
+        @media screen and (max-width: 992px){
+            .column{
+                flex:50%;
+                max-width: 50%;
+            }
+        }
+            @media screen and (max-width:600px){
+                .column{
+                    flex: 100%;
+                    max-width: 100%;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Responsive Gallery</h1>
+        <p>Resize the window size to see the effect</p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <img src="4.jpg" style="width:100%">
+            <img src="5.jpg" style="width:100%">
+            <img src="6.jfif" style="width:100%">
+                <img src="7.jfif" style="width:100%">
+            
+            </div>
+            <div class="column">
+                <img src="5.jpg" style="width:100%">
+                <img src="7.jfif" style="width:100%">
+                <img src="6.jfif" style="width:100%">
+                <img src="4.jpg" style="width:100%">
+                </div>
+                <div class="column">
+                    <img src="6.jfif" style="width:100%">
+                    <img src="4.jpg" style="width:100%">
+                    <img src="5.jpg" style="width:100%">
+                <img src="7.jfif" style="width:100%">
+                    
+                    </div>
+                    <div class="column">
+                        <img src="7.jfif" style="width:100%">
+                        <img src="4.jpg" style="width:100%">
+                        <img src="5.jpg" style="width:100%">
+                        <img src="6.jfif" style="width:100%">
+                        </div>
+    </div>
+</body>
+</html>

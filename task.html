@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        .header{
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        .row{
+            display:flex;
+            flex-wrap: wrap;
+        }
+        .main{
+            flex:100%;
+        }
+        .footer{
+            text-align: center;
+            background-color: blueviolet;
+            color: black;
+            width:100%;
+            margin-top: 30%;
+        }
+        @media screen and (min-width:0px){
+            .main{
+                display:none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1> Hello Isna</h1>
+    </div>
+    <div class="row">
+        <div class="main">
+   <p> i am hiding everything in main ,can you say how
+    </p>
+   </div>
+    <div class="footer">
+        <h3>FOOTER</h3>
+        <p>where is the main body?</p>
+    </div>
+    </div>
+</body>
+</html>

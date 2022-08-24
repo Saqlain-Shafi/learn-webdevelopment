@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            height: 100%;
+            margin:0;
+        }
+        h1{
+            background-color: blue;
+            color: black;
+            text-align: center;
+            height:auto;
+           margin: 0;
+        }
+        .item1{
+            grid-area: Header;
+        }
+        .item2{
+            grid-area: Menu;
+        }
+        .item3{
+            grid-area: Main-content;
+        }
+        .item4{
+            grid-area: Rightside-content;
+        }
+        .item5{
+            grid-area: Footer;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-areas: 'Header Header Header Header'
+            'Menu  Main-content  Main-content Rightside-content'
+            'Menu  Main-content  Main-content Rightside-content'
+            'Menu  Main-content  Main-content Rightside-content'
+            'Menu  Main-content  Main-content Rightside-content'
+            'Menu Footer Footer Footer';
+            gap: 20px;
+            background-color: #777;
+            padding: 15px;
+        }
+        .grid-container> div{
+            color: white;
+            text-align: center;
+padding: 25px;
+background-color: #555;        }
+    </style>
+</head>
+<body>
+    <h1>Grid layout</h1>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+  <div class="item2">Menu</div>
+  <div class="item3">Main-content</div>  
+  <div class="item4">Rightside-content</div>
+  <div class="item5">Footer</div>
+      </div>
+</body>
+</html>

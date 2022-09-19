@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z index</title>
+    <style>
+        .dabi {
+            border: 1px solid green;
+            width: 200px;
+            height: 150px;
+        }
+
+        #dabi1 {
+            background-color: aqua;
+            position: relative;
+            top: 20px;
+            z-index: 1;
+            /*Element having more zindex will be on top of stack*/
+        }
+
+        #dabi2 {
+            background-color: blue;
+            top: -20px;
+            position: relative;
+            z-index: -1;
+        }
+
+        #dabi3 {
+            background-color: brown;
+        }
+
+        #dabi4 {
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dabi" id="dabi1"></div>
+    <div class="dabi" id="dabi2"></div>
+    <div class="dabi" id="dabi3"></div>
+    <div class="dabi" id="dabi4"></div>
+</body>
+
+</html>

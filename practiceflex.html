@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <STYLE>
+        .container {
+            border: 3px solid gold;
+            height: 250px;
+            display: flex;
+            /* flex-direction: column;                       By deafault row. */
+            /* flex-direction: column-reverse; */
+            /*justify content is used to align horzontally*/
+            justify-content: center;
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content:space-around; */ 
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* align-items: center;                     having all properties like justify-content but used to align vertically */
+            /* flex-wrap: nowrap; */
+            flex-flow: row nowrap;
+            /*combined property for wrap nd direction*/
+        }
+
+        .items {
+            border: 2px solid green;
+            padding: 4px;
+            margin: 5px;
+            width: 15em;
+
+        }
+
+        #items1 {
+            background-color: blue;
+            flex-grow: 1;
+        }
+
+        #items2 {
+            background-color: brown;
+            flex-shrink: 3;
+        }
+
+        #items3 {
+            background-color: chartreuse;
+        }
+
+        #items4 {
+            background-color: darkgreen;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items" id="items1">ITEM 1</div>
+        <div class="items" id="items2">ITEM 2</div>
+        <div class="items" id="items3">ITEM 3</div>
+        <div class="items" id="items4">ITEM 4</div>
+
+</body>
+
+</html>

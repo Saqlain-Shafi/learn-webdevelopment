@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX SHADOW</title>
+    <STYLE>
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            height: 250px;
+            text-align: center;
+            border: 1px solid yellow;
+            background-color: crimson;
+            box-shadow: 2px 2px 4px 5px blue;
+            text-shadow: 1px 1px rgb(127, 212, 16);
+            transition-property: all;
+            transition-duration: 4s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 2s;
+        }
+
+        .box:hover {
+            background-color: magenta;
+            font-size: 40px;
+            top: 30px;
+            height: 300px;
+            border-radius: 150px;
+        }
+    </STYLE>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">HELLO THERE</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo selectors</title>
+    <style>
+        .container {
+            display: block;
+            width: 250px;
+            margin: auto;
+        }
+
+        input[type='text'] {
+            font-size: 30px;
+        }
+
+        input[type='email'] {
+            background-color: aqua;
+        }
+
+        a[target] {
+            color: green;
+        }
+
+        a[target="_parent"] {
+            color: palevioletred;
+        }
+        /* li:nth-child(3n+1){
+            background-color: tomato;
+        } */
+        li:nth-child(even){
+            background-color: lightblue;
+        }
+        li:nth-child(odd){
+            background-color: maroon;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3><a href="https://www.google.com/" class="link" target="_blank">Go to Google</a></h3>
+        <h3><a href="https://www.facebook.com/" class="link1" target="_parent">Go to facebook</a></h3>
+        <form action="#" class="list-control">
+            <input type="text" class="text" placeholder="Enter your Name">
+            <input type="text" class="number" placeholder="Enter your Number">
+            <input type="email" class="email" placeholder="Enter your Email">
+            <button class="submit">SUBMIT HERE</button>
+        </form>
+        <ul>
+            <li class="item">This is item 1</li>
+            <li class="item">This is item 2</li>
+            <li class="item">This is item 3</li>
+            <li class="item">This is item 4</li>
+            <li class="item">This is item 5</li>
+            <li class="item">This is item 6</li>
+            <li class="item">This is item 7</li>
+            <li class="item">This is item 8</li>
+        </ul>
+
+    </div>
+</body>
+
+</html>

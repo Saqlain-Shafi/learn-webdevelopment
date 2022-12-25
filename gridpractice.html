@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive with css grid</title>
+    <style>
+        .container {
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section aside'
+                'footer footer footer footer';
+        }
+
+        .box {
+            border: 2px solid red;
+            background-color: wheat;
+            padding: 15px;
+        }
+
+        #navbar {
+            grid-area: navbar;
+        }
+
+        #section {
+            grid-area: section;
+        }
+
+        #aside {
+            grid-area: aside;
+        }
+
+        #footer {
+            grid-area: footer;
+            text-align: center;
+        }
+
+
+        /*Responsive part*/
+        @media (min-width:300px) and (max-width:500px) {
+            body {
+                background-color: rgb(211, 22, 22);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+
+        @media(min-width:500px) and (max-width:800px) {
+            body {
+                background-color: rgb(33, 2, 46);
+            }
+
+            .container {
+                grid-template-areas:
+                    'navbar navbar navbar navbar'
+                    'section section section section'
+                    'aside aside aside aside'
+                    'footer footer footer footer';
+            }
+        }
+
+        @media (min-width:800px) {
+            body {
+                background-color: rgb(92, 90, 83);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav id="navbar" class="box">
+            Home About Services Contact
+        </nav>
+        <section id="section" class="box">
+            <h2>Learn With Saqlain</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis accusamus harum praesentium nisi facilis
+                fugiat iusto ea dicta perspiciatis adipisci, aperiam magnam totam expedita delectus fugit maxime
+                debitis!
+                Laborum, asperiores. Provident recusandae velit unde doloremque error nam pariatur dolorem enim
+                blanditiis
+                numquam dolore rem fuga debitis, quis neque fugiat obcaecati iure consequuntur. Recusandae consequuntur
+                consequatur tempore saepe eius beatae eum eveniet omnis libero. Numquam qui excepturi iste animi magni
+                officia consequatur quam modi, corporis laudantium unde necessitatibus maiores iure incidunt deleniti a
+                laboriosam cupiditate porro voluptatum error tempora minima. Enim optio iste soluta aspernatur magnam
+                sunt
+                adipisci fugiat tempore id laudantium aliquid, excepturi et distinctio, ea reiciendis ratione qui
+                accusamus
+                totam numquam!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut placeat minus nesciunt exercitationem qui,
+                consequatur quos amet animi, error temporibus deserunt officia eos reiciendis ab totam maiores quo
+                molestias saepe itaque explicabo reprehenderit odit, suscipit iste. Possimus neque enim optio
+                necessitatibus mollitia eligendi esse doloribus, molestiae modi! Reiciendis voluptatem, veniam ex quae
+                atque facilis repudiandae eveniet. Beatae repellendus, totam nisi, voluptates ad facilis non repudiandae
+                vitae, ipsam odio neque. Molestiae quo aliquam numquam eum, placeat et eveniet veritatis deserunt esse.
+            </p>
+        </section>
+        <aside id="aside" class="box">
+            <h3>More About Saqii</h3>
+        </aside>
+        <footer id="footer" class="box">copyright CodeWithSaqii</footer>
+    </div>
+
+</body>
+
+</html>

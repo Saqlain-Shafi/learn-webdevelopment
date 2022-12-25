@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATION</title>
+    <style>
+        div {
+            border: 2px solid red;
+            background-color: darkviolet;
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            animation-name: saqii;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+        }
+
+        @keyframes saqii {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 0px;
+                left: 500px;
+                background-color: aqua;
+            }
+
+            50% {
+                top: 500px;
+                left: 500px;
+                background-color: brown;
+            }
+
+            75% {
+                top: 500px;
+                left: 0px;
+                background-color: greenyellow;
+
+            }
+                100% {
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

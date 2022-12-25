@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css"
+  </head>
+  <body>
+    <h1 id="top">survey form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform </p>
+    <fieldset>
+    <form id="survey-form">
+      <label for="name" >Name</label>
+      <input type="text" id="name" placeholder="Enter your Name">
+      <label for="email" >Email</label>
+      <input type="text" id="email" placeholder="Enter your Email">
+      <label for="number"  >Number</label>
+      <input type="text" id="number" placeholder="Enter your Number">
+     <label for="dropdown"  >Choose your favourite car:</label>
+      <select id="dropdown">
+      <option>Ferrari</option>
+      <option>BMW</option>
+      <option>Alfa Romeo</option></select>
+    </fieldset>
+     <p>Would you recommend freeCodeCamp to a friend?</p>
+     <input type="radio" id="rb" name="Definitely">
+      <label for="rb" >Definitely</label><br>
+      <input type="radio" id="rb" name="maybe">
+      <label for="rb" >Maybe</label>
+    <br>
+   <input type="radio" id="rb" name="Notsure">
+    <label for="rb" >NotSure</label>
+    <p>What would you like to see improved? (Check all that apply)</p>
+    <input type="checkbox" id="cb" value="Front-end Projects">
+    <label for="cb">Front-end Projects</label><br>
+   <input type="checkbox" id="cb" value="Back-end Projects">  
+<label for="cb">Back-end Projects</label><br>
+  <input type="checkbox" id="cb" value="Challenges">  
+<label for="cb">Challenges</label><br>
+  <input type="checkbox" id="cb" value="Wiki">  
+<label for="cb">Wiki</label>
+<p>Any comments or suggestions?</p>
+<textarea style="width:200px;height:100px" placeholder="write something here..."></textarea><br>
+<input type="button" id="submit" value="submit">
+
+</form>
+ </body>
+</html>

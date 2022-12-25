@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        :root {
+            --primary-color: red;
+            /*change colors here they will get changed everywhr used*/
+            --secondary-color: blue;
+            --danger-color: white;
+            --text-color: rgb(10, 217, 231);
+        }
+
+        .container {
+            background-color: var(--danger-color);
+
+        }
+
+        .first {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            margin: 2px;
+        }
+
+        .second {
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            margin: 2px;
+        }
+
+        .transform1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: yellowgreen;
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .transform1:hover {
+            transform: rotate(45deg);
+            background-color: darkcyan;
+            transform:translateX(500px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quas voluptate natus iste autem
+            ratione qui dolor sapiente quos, illo minima, nemo architecto! Harum quos dicta sapiente assumenda repellat
+            doloremque!
+            Dolor omnis impedit expedita vitae, iure sunt, quibusdam maxime temporibus a autem, voluptas eveniet!
+            Ratione asperiores quos voluptatem veritatis quasi. Ab facilis, beatae ipsum voluptates quam vero dolorem.
+            Corrupti, ullam.</p>
+        <p class="first">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quas voluptate natus iste autem
+            ratione qui dolor sapiente quos, illo minima, nemo architecto! Harum quos dicta sapiente assumenda repellat
+            doloremque!
+            Dolor omnis impedit expedita vitae, iure sunt, quibusdam maxime temporibus a autem, voluptas eveniet!
+            Ratione asperiores quos voluptatem veritatis quasi. Ab facilis, beatae ipsum voluptates quam vero dolorem.
+            Corrupti, ullam.</p>
+        <p class="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quas voluptate natus iste autem
+            ratione qui dolor sapiente quos, illo minima, nemo architecto! Harum quos dicta sapiente assumenda repellat
+            doloremque!
+            Dolor omnis impedit expedita vitae, iure sunt, quibusdam maxime temporibus a autem, voluptas eveniet!
+            Ratione asperiores quos voluptatem veritatis quasi. Ab facilis, beatae ipsum voluptates quam vero dolorem.
+            Corrupti, ullam.</p>
+        <p class="second">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos quas voluptate natus iste autem
+            ratione qui dolor sapiente quos, illo minima, nemo architecto! Harum quos dicta sapiente assumenda repellat
+            doloremque!
+            Dolor omnis impedit expedita vitae, iure sunt, quibusdam maxime temporibus a autem, voluptas eveniet!
+            Ratione asperiores quos voluptatem veritatis quasi. Ab facilis, beatae ipsum voluptates quam vero dolorem.
+            Corrupti, ullam.</p>
+    </div>
+    <div class="transform1">HOVER OVER ME</div>
+</body>
+
+</html>

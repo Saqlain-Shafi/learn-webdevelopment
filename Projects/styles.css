@@ -1,0 +1,10 @@
+#top {
+    text-align: center;
+    font-variant: small-caps;
+    margin-bottom: 0;
+  }
+  #description { 
+    text-align: center;
+    text-transform: lowercase;
+    margin-top: 0px;
+  }
